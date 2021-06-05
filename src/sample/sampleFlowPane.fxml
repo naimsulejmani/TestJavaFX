@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.Controller"
+            prefHeight="400.0" prefWidth="600.0" orientation="VERTICAL">
+
+    <Button text="Button 1"/>
+    <Button text="Button 2"/>
+    <Button text="Button 3"/>
+    <Button text="Button 4"/>
+    <Button text="Button 5"/>
+    <Button text="Button 6"/>
+    <Button text="Button 7"/>
+    <Button text="Button 8"/>
+    <Button text="Button 9"/>
+    <Button text="Button 10"/>
+
+
+
+</FlowPane>
