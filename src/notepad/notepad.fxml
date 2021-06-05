@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="notepad.NotepadController">
+   <top>
+       <MenuBar>
+           <Menu text="File">
+               <items>
+                   <MenuItem text="New" />
+                   <MenuItem text="Open" />
+                   <MenuItem text="Save" />
+                   <SeparatorMenuItem />
+                   <MenuItem text="Exit" />
+               </items>
+           </Menu>
+           <Menu text="Edit">
+               <items>
+                   <MenuItem text="Cut" />
+                   <MenuItem text="Copy" />
+                   <MenuItem text="Paste" />
+                   <MenuItem text="Delete" />
+               </items>
+           </Menu>
+       </MenuBar>
+   </top>
+    <center>
+        <TextArea />
+    </center>
+    <bottom>
+        <GridPane hgap="20" vgap="20" gridLinesVisible="true" alignment="CENTER">
+            <Label text="                       "  GridPane.columnIndex="0"/>
+            <Label text=" Ln: 1, Col: 7 " GridPane.columnIndex="1"/>
+            <Label text=" 100% " GridPane.columnIndex="2"/>
+            <Label text=" Windows (CRLF) " GridPane.columnIndex="3"/>
+            <Label text=" UTF-8 " GridPane.columnIndex="4"/>
+        </GridPane>
+    </bottom>
+</BorderPane>
