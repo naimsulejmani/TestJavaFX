@@ -36,7 +36,9 @@
     <Button text="|&amp;|" fx:id="btnChange" GridPane.rowIndex="3" GridPane.columnIndex="0" prefWidth="50"
             prefHeight="35"/>
     <Button text="CE" fx:id="btnCE" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="50" prefHeight="35"/>
-    <Button text="C" fx:id="btnC" GridPane.rowIndex="3" GridPane.columnIndex="2" prefWidth="50" prefHeight="35"/>
+    <Button text="C" fx:id="btnC" GridPane.rowIndex="3" GridPane.columnIndex="2" prefWidth="50" prefHeight="35"
+        onAction="#clear"
+    />
     <Button text="&lt;-" fx:id="btnRemoveRight" GridPane.rowIndex="3" GridPane.columnIndex="3" prefWidth="50"
             prefHeight="35"/>
     <Button text="/" fx:id="btnDivide" GridPane.rowIndex="3" GridPane.columnIndex="4" prefWidth="50" prefHeight="35"/>
@@ -64,7 +66,7 @@
 
     <!--reshti 6 -->
     <Button text="+/-" fx:id="btnChangeSign" GridPane.rowIndex="6" GridPane.columnIndex="0" prefWidth="50"
-            prefHeight="35"/>
+            prefHeight="35" onAction="#changeSign"/>
     <Button text="1" fx:id="btn1" GridPane.rowIndex="6" GridPane.columnIndex="1" prefWidth="50" prefHeight="35"
             onAction="#setValue"/>
     <Button text="2" fx:id="btn2" GridPane.rowIndex="6" GridPane.columnIndex="2" prefWidth="50" prefHeight="35"
