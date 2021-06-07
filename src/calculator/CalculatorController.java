@@ -35,12 +35,23 @@ public class CalculatorController {
     @FXML
     private Button btnMultiply;
 
+    @FXML
+    private Button btnSquareRoot;
+
+    @FXML
+    private Button btnChange;
+    @FXML
+    private Button btnChangeSign;
+
+    @FXML
+    private Button btnRemoveRight;
+
 
     EventHandler<ActionEvent> operatorActionEvent = (ae) -> {
         Button btn = (Button) ae.getSource();
         String operator = btn.getText(); //+,-,/,x
 
-        if(isNewNumber) {
+        if (isNewNumber) {
             lastOperatorString = operator;
             return;
         }
@@ -90,6 +101,12 @@ public class CalculatorController {
 
     //ka nje metode inicializuese e cila vepron konstruktor
     public void initialize() {
+        btnSquareRoot.setText("\u221A");
+        btnChange.setText("\u2191");
+//        btnChangeSign.setText("\u2213");
+        btnRemoveRight.setText("\u20D6");
+        btnPI.setText("\u03C0" +
+                "");
         System.out.println("Initialize before everything else!");
         //btnPowXY vendosi nje ngjarje
         btnPowXY.setOnAction(new EventHandler<ActionEvent>() {
